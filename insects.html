@@ -1,125 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <style>
-        img {
-          border: 1px solid #ddd;
-          border-radius: 4px;
-          padding: 5px;
-          width: 300px;
-          height: 300px;
-        }
-        .responsive {
-            max-width: 100%;
-            height: auto;
-            border: #ddd;
-            padding: 5px;
-        }
-        .title{
-            font-size:xx-large;
-            font-style:initial;
-            font-family: 'Times New Roman', Times, serif;
-            color: rgb(236, 27, 34);
-        }
-    </style>
-        
   <title>Insects</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+  <link rel="stylesheet" href="./insects.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+    integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
+    crossorigin="anonymous"></script>
 </head>
-    <body>
-        <h1>Insects by AdiLakshmi Meesala</h1>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-2 "><p>M</p></div>
-                <div class="col-sm-2 "><p>E</p></div>
-                <div class="col-sm-2 "><p>E</p></div>
-                <div class="col-sm-2 "><p>S</p></div>
-                <div class="col-sm-2 "><p>A</p></div>
-                <div class="col-sm-2 "><p>L</p></div>
-            </div>
-            <div class="row">
-                <div class="col-md ">Mosquito</div>
-                <div class="col-md ">Earth worm</div>
-                <div class="col-md ">Earwing</div>
-                <div class="col-md ">Sawflies</div>
-                <div class="col-md ">antennae</div>
-                <div class="col-md ">lice</div>
-            </div>
-        </div>
-        <div class="container">
-            <h1>Responsive Images</h1>
-            <img src="Mletterincets.png" alt="Responsive image" class="responsive">
-            <br>
-            <img src="Eletterincets.png" alt="Responsive image" class="responsive">
-            <br>
-            <img src="eletterincets1.png" alt="Responsive image" class="responsive">
-            <br>
-            
-        </div>
-        <div class="container">
-            <h1>Thumbnail Images</h1>
-            <img src="Mletterincets.png" class="rounded float-start"" alt="Mletterincets">
-            <br>
-            <img src="Eletterincets.png" class="rounded float-start" alt="Eletterincets">
-            <br>
-            <img src="eletterincets1.png" class="rounded float-start" alt="Mletterincets1">
-            <br>
-        </div>
-        <table class="table table-striped table-bordered table-hover table-responsive table-condensed text-warning">
-            <caption class="title">Bootstrap Table </caption>
-            <thead>
-                <tr class="bg-primary">
-                  <th scope="col">Letter</th>
-                  <th scope="col">Insect</th>
-                  <th scope="col">City</th>
-                  <th scope="col">River</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr class="table-warning">
-                  <td>M</td>
-                  <td>Mosquito</td>
-                  <td>Moscow</td>
-                  <td>Missouri River</td>
-                </tr>
-                <tr class="table-danger">
-                    <td>E</td>
-                    <td>Earth worm</td>
-                    <td>Everett</td>
-                    <td>Essequibo</td>
-                  </tr>
-                  <tr>
-                    <td>E</td>
-                    <td>Earwing</td>
-                    <td>East Hartford</td>
-                    <td>Elbe</td>
-                  </tr>
-                  <tr>
-                    
-                    <td>S</td>
-                    <td>Sawflies</td>
-                    <td>South San Francisco</td>
-                    <td>Songhua</td>
-                  </tr>
-                  <tr>
-                    <td>A</td>
-                    <td>antennae</td>
-                    <td>Albuquerque</td>
-                    <td>Araguaia</td>
-                  </tr>
-                  <tr>
-                    <td>L</td>
-                    <td>lice</td>
-                    <td>Lima</td>
-                    <td>Lena</td>
-                  </tr>
-              </tbody>
-        </table>
-    </body>
+<body>
+  <div class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Interesting Insects</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarcollapse">
+        <ul class="navbar-nav mr-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./basic.html">Basic</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./advanced.html">Advanced</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <h1>Insects by Adilakshmi Meesala</h1>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-2">
+        <p>M</p>
+      </div>
+      <div class="col-sm-2">
+        <p>E</p>
+      </div>
+      <div class="col-sm-2">
+        <p>E</p>
+      </div>
+      <div class="col-sm-2">
+        <p>S</p>
+      </div>
+      <div class="col-sm-2">
+        <p>A</p>
+      </div>
+      <div class="col-sm-2">
+        <p>L</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md">
+        <p>Mosquito</p>
+      </div>
+      <div class="col-md">
+        <p>Earth worm</p>
+      </div>
+      <div class="col-md">
+        <p>Earwing</p>
+      </div>
+      <div class="col-md">
+        <p>Sawflies</p>
+      </div>
+      <div class="col-md">
+        <p>antennae</p>
+      </div>
+      <div class="col-md">lice</div>
+    </div>
+  </div>
+  <br>
+  <p>Insects row will break first because we have used col-md class so it will break when we adjust screen size</p>
+  <h1>Responsive Images</h1>
+  <div class="gallery min-vh-50">
+    <div class="container">
+      <img src="./Mletterincets.png" class="rounded float-sm-none" alt="Mosquito" width="200px" height="200px">
+      <img src="./Eletterincets.png" class="rounded float-sm-none" alt="Earth worm" width="200px" height="200px">
+      <img src="./eletterincets1.png" class="rounded float-sm-none" alt="Earwing" width="200px" height="200px">
+    </div>
+  </div>
+<h1>Thumbnail Images</h1>
+  <div class="container">
+    <div class="img-2">
+      <img src="./Mletterincets.png" class="img-thumbnail" alt="Mosquito" style="width: 200px; height: 200px;">
+      <img src="./Eletterincets.png" class="img-thumbnail" alt="Earth worm" style="width: 200px; height: 200px;">
+      <img src="./eletterincets1.png" class="img-thumbnail" alt="Earwing" style="width: 200px; height: 200px;">
+    </div>
+  </div>
+<h1>Table</h1>
+  <table class="table table-striped table-hover table-bordered">
+    <caption>Alphabetical Wise Rivers</caption>
+    <thead class="thead-dark">
+      <tr>
+        <th>Letter</th>
+        <th>Insect</th>
+        <th>City</th>
+        <th>River</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="table-warning">M</td>
+        <td class="table-dark">Mosquito</td>
+        <td class="table-light">Moscow</td>
+        <td class="table-primary">Missouri River</td>
+      </tr>
+
+      <tr>
+        <td>E</td>
+        <td>Earth worm</td>
+        <td>Everett</td>
+        <td>Essequibo</td>
+      </tr>
+
+      <tr>
+        <td class="table-warning">E</td>
+        <td class="table-dark">Earwing</td>
+        <td class="table-light">East Hartford</td>
+        <td>Elbe</td>
+      </tr>
+
+      <tr>
+        <td>S</td>
+        <td>Sawflies</td>
+        <td>South San Francisco</td>
+        <td>Songhua</td>
+      </tr>
+
+      <tr>
+        <td>A</td>
+        <td>antennae</td>
+        <td>Albuquerque</td>
+        <td>Araguaia</td>
+      </tr>
+
+      <tr>
+        <td>L</td>
+        <td>lice</td>
+        <td>Lima</td>
+        <td>Lena</td>
+      </tr>
+    </tbody>
+  </table>
+<h1>Button group</h1>
+ <center>
+    <button type="button " class="btn btn-outline-primary btn-lg">M</button>
+    <button type="button" class="btn btn-outline-primary btn-lg">E</button>
+    <button type="button" class="btn btn-outline-primary btn-lg">E</button>
+    <button type="button" class="btn btn-outline-primary btn-lg">S</button>
+    <button type="button" class="btn btn-outline-primary btn-lg">A</button>
+    <button type="button" class="btn btn-outline-primary btn-lg">L</button>
+  </center>
+  <br>
+  <div class="btn-toolbar" role="toolbar" aria-label="Buttons Group for Letters">
+    <div class="btn-group me-2" role="group" aria-label="First Group with Success">
+      <button type="button" class="btn btn-success btn-lg">M</button>
+      <button type="button" class="btn btn-success btn-lg">E</button>
+      <button type="button" class="btn btn-success btn-lg">E</button>
+    </div>
+    <div class="btn-group me-2" role="group" aria-label="Second group with alert coloring">
+      <button type="button" class="btn btn-warning btn-lg">S</button>
+      <button type="button" class="btn btn-warning btn-lg">A</button>
+    </div>
+    <div class="btn-group" role="group" aria-label="Third group with danger coloring">
+      <button type="button" class="btn btn-danger btn-lg">L</button>
+    </div>
+  </div>
+  <br>
+<h1>DropDrown menu for basic and Advanced options</h1>
+<br>
+<br>
+<br>
+<br>
+ <div class="dropdown">
+    <div class="btn-group" role="group">
+      <button type="button" class="btn btn-primary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Dropdown Menu
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="./basic.html">Basic</a></li>
+        <li><a class="dropdown-item" href="./advanced.html">Advanced</a></li>
+      </ul>
+    </div>
+  </div>
+  <br>
+  <form>
+    <div class="form-group">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputInsect" class="form-control">Insect</label>
+        <input type="text" class="form-control" id="exampleInputInsect" placeholder="Enter your insect">
+      </div>
+    </div>
+
+    <div class="form-check">
+      <label for="exampleInputInsect" class="<div class=" form-check">
+        <input class="form-check-input" type="checkbox" value="" id="">
+        <label class="form-check-label" for="">
+          <b>Sign up for newsletter? </b>
+        </label>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+  <br>
+
+  <div class="card-group">
+  <div class="card" style="width: 20rem;">
+    <img src="./Mletterincets.png" class="card-img-top" alt="Mosquito" style="width: 470px; height: 465px;">
+    <div class="card-body">
+      <h5 class="card-title">Mosquito</h5>
+      <p class="card-text">Mosquitoes are common, flying insects that live in most parts of the world. Over 3,500 types of mosquitoes can be found worldwide. Not all mosquitoes bite people or animals. When mosquitoes bite people, the most common reactions to the bite are itching and swelling.</p>
+      <a href="https://www.cdc.gov/mosquitoes/about/what-is-a-mosquito.html#:~:text=Mosquitoes%20are%20common%2C%20flying%20insects,bite%20are%20itching%20and%20swelling." class="btn btn-primary"">Read More..</a>
+    </div>
+  </div>
+<div class=" card" style="width: 20rem;">
+        <img src="./Eletterincets.png" class="card-img-top" alt="Underwing" style="width: 470px; height: 465px;">
+        <div class="card-body">
+          <h5 class="card-title">Earwig</h5>
+          <p class="card-text">Earwigs are not dangerous, but they will use their pincers on humans if they feel threatened or startled. Usually, earwigs will pinch you if you try to pick them up or handle them. These pincers probably aren't strong enough to break your skin, but the pinching might hurt a little.</p>
+          <a href="https://www.mccallservice.com/blog/what-is-an-earwig/" class="btn btn-primary"">Read More..</a>
+    </div>
+  </div>
+
+  <div class=" card" style="width: 20rem;">
+            <img src="./eletterincets1.png" class="card-img-top" alt="Cockroach" style="width: 470px; height: 465px;">
+            <div class="card-body">
+              <h5 class="card-title">Earwig</h5>
+              <p class="card-text">An earwig is an insect with two antennae, six legs, three body parts, and a formidable set of pincers on the end of its abdomen. It ranges from 5 to 25 millimeters in size, depending on the species. And, though it is possible to find an earwig in your ear, they do not lay their eggs in the ear canals of humans, nor do they feed on brains, as myth may have you believe.</p>
+              <a href="https://www.mccallservice.com/blog/what-is-an-earwig/" class="btn btn-primary"">Read More..</a>
+    </div>
+  </div>
+</div>
+</body>
 </html>
